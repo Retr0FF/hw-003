@@ -60,5 +60,18 @@ public class Main {
         System.out.println("За день машина произвела " + bottlesPerDay + " шт. бутылок");
         System.out.println("За 3 дня машина произвела " + bottles3Days + " шт. бутылок");
         System.out.println("За месяц машина произвела " + bottlesPerMonth + " шт. бутылок");
+
+        //Задача 5
+        System.out.println("\nЗадача 5");
+        short totalPaint = 120;
+        byte whitePerClass = 2;
+        byte brownPerClass = 4;
+        byte totalPerClass = (byte) (whitePerClass + brownPerClass);
+
+        int numberOfClasses = totalPaint / totalPerClass;
+        int whitePaint = numberOfClasses * whitePerClass;
+        int brownPaint = numberOfClasses * brownPerClass;
+
+        System.out.println("В школе где " + numberOfClasses + " классов, нужно " + whitePaint + " банок белой краски и " + brownPaint + " банок коричневой краски");
     }
 }
