@@ -110,5 +110,29 @@ public class Main {
         System.out.println("Если терять по 250 грамм в день то потребуется " + daysMinLoss);
         System.out.println("Если терять по 500  грамм в день то потребуется " + daysMaxLoss);
         System.out.println("В среднем потребуется " + averageDays + " дней");
+
+        //Задача 8
+        System.out.println("\nЗадача 8");
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int kristinaSalary = 76230;
+        double prozent = 0.10;
+
+        //Для Маши
+        int mashaNewSalary = (int) (mashaSalary * (1 +prozent));
+        int mashaDifference = (mashaNewSalary - mashaSalary) * 12;
+        System.out.println("Маша теперь получает " + mashaNewSalary + " рублей. Разница за год составляет " + mashaDifference + " рублей");
+
+        //Для Дениса
+        int denisNewSalary = (int) (denisSalary * (1 +prozent));
+        int denisDifference = (denisNewSalary - denisSalary) * 12;
+        System.out.println("Маша теперь получает " + denisNewSalary + " рублей. Разница за год составляет " + denisDifference + " рублей");
+
+        //Для Кристины
+        int kristinaNewSalary = (int) (kristinaSalary * (1 +prozent));
+        int kristinaDifference = (kristinaNewSalary - kristinaSalary) * 12;
+        System.out.println("Маша теперь получает " + kristinaNewSalary + " рублей. Разница за год составляет " + kristinaDifference + " рублей");
+
+
     }
 }
