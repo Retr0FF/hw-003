@@ -27,11 +27,23 @@ public class Main {
         int value5 = 27897;
         byte value6 = 67;
 
-        System.out.println("value1" + value1);
-        System.out.println("value2" + value2);
-        System.out.println("value3" + value3);
-        System.out.println("value4" + value4);
-        System.out.println("value5" + value5);
-        System.out.println("value6" + value6);
+        System.out.println("value1 " + value1);
+        System.out.println("value2 " + value2);
+        System.out.println("value3 " + value3);
+        System.out.println("value4 " + value4);
+        System.out.println("value5 " + value5);
+        System.out.println("value6 " + value6);
+
+        //Задача 3
+        System.out.println("\nЗадача 3");
+        byte studentsLudmila = 23;
+        byte studentsAnna = 27;
+        byte studentsEkaterina = 30;
+        short totalSheets = 480;
+
+        int totalStudents = studentsLudmila + studentsAnna + studentsEkaterina;
+        int sheetsPerStudent = totalSheets / totalStudents;
+
+        System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + "листов");
     }
 }
