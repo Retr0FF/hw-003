@@ -1,8 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         //Задача 1
         System.out.println("Задача 1");
         int myAge = 19;
@@ -25,8 +24,9 @@ public class Main {
         long value2 = 987678965549L;
         float value3 = 2.786f;
         short value4 = 569;
-        int value5 = 27897;
-        byte value6 = 67;
+        int value5 = -159;
+        int value6 = 27897;
+        byte value7 = 67;
 
         System.out.println("value1 " + value1);
         System.out.println("value2 " + value2);
@@ -34,6 +34,7 @@ public class Main {
         System.out.println("value4 " + value4);
         System.out.println("value5 " + value5);
         System.out.println("value6 " + value6);
+        System.out.println("value7 " + value7);
 
         //Задача 3
         System.out.println("\nЗадача 3");
@@ -85,13 +86,7 @@ public class Main {
         byte eggsCount = 4;
         short eggWeight = 70;
 
-        int totalWeightGrams = (int)
-                (
-                        (bananaWeight*bananaCount) +
-                        (milkML*milkWeightPer100ML / 100) +
-                        iceCreamWeight +
-                        (eggsCount * eggWeight)
-                );
+        int totalWeightGrams = (int) ((bananaWeight * bananaCount) + (milkML * milkWeightPer100ML / 100) + iceCreamWeight + (eggsCount * eggWeight));
         float totalWeightKg = totalWeightGrams / 1000f;
 
         System.out.println("Вес спортзавтрака: " + totalWeightGrams + " грамм");
@@ -113,24 +108,24 @@ public class Main {
 
         //Задача 8
         System.out.println("\nЗадача 8");
-        int mashaSalary = 67760;
-        int denisSalary = 83690;
-        int kristinaSalary = 76230;
+        var mashaSalary = 67760;
+        var denisSalary = 83690;
+        var kristinaSalary = 76230;
         double prozent = 0.10;
 
         //Для Маши
-        int mashaNewSalary = (int) (mashaSalary * (1 +prozent));
-        int mashaDifference = (mashaNewSalary - mashaSalary) * 12;
+        var mashaNewSalary = (int) (mashaSalary * (1 + prozent));
+        var mashaDifference = (mashaNewSalary - mashaSalary) * 12;
         System.out.println("Маша теперь получает " + mashaNewSalary + " рублей. Разница за год составляет " + mashaDifference + " рублей");
 
         //Для Дениса
-        int denisNewSalary = (int) (denisSalary * (1 +prozent));
-        int denisDifference = (denisNewSalary - denisSalary) * 12;
+        var denisNewSalary = (int) (denisSalary * (1 + prozent));
+        var denisDifference = (denisNewSalary - denisSalary) * 12;
         System.out.println("Маша теперь получает " + denisNewSalary + " рублей. Разница за год составляет " + denisDifference + " рублей");
 
         //Для Кристины
-        int kristinaNewSalary = (int) (kristinaSalary * (1 +prozent));
-        int kristinaDifference = (kristinaNewSalary - kristinaSalary) * 12;
+        var kristinaNewSalary = (int) (kristinaSalary * (1 + prozent));
+        var kristinaDifference = (kristinaNewSalary - kristinaSalary) * 12;
         System.out.println("Маша теперь получает " + kristinaNewSalary + " рублей. Разница за год составляет " + kristinaDifference + " рублей");
 
 
