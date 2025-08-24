@@ -3,6 +3,7 @@
 public class Main {
     public static void main(String[] args)
     {
+        //Задача 1
         System.out.println("Задача 1");
         int myAge = 19;
         byte numberOfStudents = 22;
@@ -95,5 +96,19 @@ public class Main {
 
         System.out.println("Вес спортзавтрака: " + totalWeightGrams + " грамм");
         System.out.println("Вес спортзавтрака: " + totalWeightKg + " килограмм");
+
+        //Задача 7
+        System.out.println("\nЗадача 7");
+        short weightToLose = 7000; // 7 кг в грамах
+        short minLossPerDay = 250;
+        short maxLossPerDay = 500;
+
+        int daysMinLoss = weightToLose / minLossPerDay;
+        int daysMaxLoss = weightToLose / maxLossPerDay;
+        int averageDays = (daysMaxLoss + daysMinLoss) / 2;
+
+        System.out.println("Если терять по 250 грамм в день то потребуется " + daysMinLoss);
+        System.out.println("Если терять по 500  грамм в день то потребуется " + daysMaxLoss);
+        System.out.println("В среднем потребуется " + averageDays + " дней");
     }
 }
