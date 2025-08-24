@@ -44,6 +44,21 @@ public class Main {
         int totalStudents = studentsLudmila + studentsAnna + studentsEkaterina;
         int sheetsPerStudent = totalSheets / totalStudents;
 
-        System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + "листов");
+        System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов");
+
+        //Задача 4
+        System.out.println("\nЗадача 4");
+        byte bottlesPer2Minutes = 16;
+        int bottlesPerMinute = bottlesPer2Minutes / 2;
+
+        int bottles20Minutes = bottlesPerMinute * 20;
+        int bottlesPerDay = bottlesPerMinute * 60 * 24;
+        int bottles3Days = bottlesPerDay * 3;
+        int bottlesPerMonth = bottlesPerDay * 30;
+
+        System.out.println("За 20 минут машина произвела " + bottles20Minutes + " шт. бутылок");
+        System.out.println("За день машина произвела " + bottlesPerDay + " шт. бутылок");
+        System.out.println("За 3 дня машина произвела " + bottles3Days + " шт. бутылок");
+        System.out.println("За месяц машина произвела " + bottlesPerMonth + " шт. бутылок");
     }
 }
